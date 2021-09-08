@@ -3,7 +3,7 @@ var x, y, v;
 function setup() {
    createCanvas(500, 400)
 
-   x = 0;
+   x = 0
    y = 200;
    vx = 5;
    vy = 5;
