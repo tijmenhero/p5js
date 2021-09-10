@@ -42,3 +42,19 @@ function draw() {
   if(n < 0 || n > 400)
    vn = vn * -1
 }
+
+class ball {
+
+  constructor(x, y, w, h, vx, vy) {
+    this.x = x
+    this.y = y
+    this.w = w
+    this.h = h
+    this.vx = vx
+    this.vy = vy
+  }
+
+drawBall() {
+  ellipse(this.x, this.y, this.w, this.h)
+}
+}
