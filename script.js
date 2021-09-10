@@ -1,18 +1,25 @@
-var x, y, v;
+var x, y, m, n, v;
 
 function setup() {
    createCanvas(500, 400)
 
-   x = 0
+   x = 0;
    y = 200;
+   m = 200;
+   n = 0;
    vx = 5;
    vy = 5;
+   vm = 2;
+   vn = 2;
 }
 
 function draw() {
   background(225);
+  let c = color('red')
+  let o = color('green')
 
-  ellipse(x, y,50,50);
+  ellipse(x, y,50,50,);
+  fill(c)
   x = x + vx
   y = y + vy
 
@@ -22,4 +29,16 @@ function draw() {
 
   if(y < 0 || y > 400)
    vy = vy * -1
+
+   ellipse(m, n,50,50,);
+  fill(o)
+  m = m + vm
+  n = n + vn
+
+  if(m < 0 || m > 500){
+    vm = vm * -1
+  }
+
+  if(n < 0 || n > 400)
+   vn = vn * -1
 }
